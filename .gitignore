@@ -1,0 +1,6 @@
+cgl_rag_env/
+__pycache__/
+*.pyc
+.env
+vector_store/faiss_index/
+frontend/node_modules/

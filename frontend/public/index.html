@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSC CGL 2026 | Information Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="gov-strip">
+    <span>भारत सरकार | Government of India</span>
+    <span>Staff Selection Commission</span>
+  </div>
+
+  <div class="app">
+    <header class="app-header">
+      <div class="emblem">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#ffffff" stroke-width="3"/>
+          <circle cx="50" cy="50" r="6" fill="#ffffff"/>
+          <g stroke="#ffffff" stroke-width="2.5">
+            <line x1="50" y1="4" x2="50" y2="22"/>
+            <line x1="50" y1="78" x2="50" y2="96"/>
+            <line x1="4" y1="50" x2="22" y2="50"/>
+            <line x1="78" y1="50" x2="96" y2="50"/>
+            <line x1="17" y1="17" x2="30" y2="30"/>
+            <line x1="70" y1="70" x2="83" y2="83"/>
+            <line x1="17" y1="83" x2="30" y2="70"/>
+            <line x1="70" y1="30" x2="83" y2="17"/>
+          </g>
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1>SSC CGL 2026 — Information Assistant</h1>
+        <p>Combined Graduate Level Examination · Official Notification Helpdesk</p>
+      </div>
+      <div class="status-badge">
+        <span class="dot"></span> Online
+      </div>
+    </header>
+
+    <div class="sub-bar">
+      <span>📋 Eligibility</span>
+      <span>💰 Fees</span>
+      <span>📅 Important Dates</span>
+      <span>📝 Exam Pattern</span>
+      <span>📄 Documents</span>
+    </div>
+
+    <main class="chat-container" id="chatContainer">
+      <div class="message bot">
+        <div class="avatar bot-avatar">SSC</div>
+        <div class="bubble">
+          <strong>Namaste 🙏</strong><br/>
+          I am an AI-based information assistant for the <strong>SSC CGL 2026</strong> recruitment notification.
+          You may ask about age limits, application fees, eligibility, exam pattern, syllabus, important dates, or required documents.
+          <br/><br/>
+          <em>Answers are generated directly from the official notification document.</em>
+        </div>
+      </div>
+    </main>
+
+    <!-- Changed from form to div to prevent page reload -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your question here, e.g. What is the application fee?"
+        autocomplete="off"
+      />
+      <button id="sendBtn" onclick="handleSend()">
+        <span class="btn-text">Send</span>
+        <span class="spinner" id="spinner"></span>
+      </button>
+    </div>
+
+    <footer class="app-footer">
+      This is an AI-generated assistant based on the SSC CGL 2026 notification dated 21-05-2026. For official information, always refer to
+      <a href="https://ssc.gov.in" target="_blank">ssc.gov.in</a>.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
